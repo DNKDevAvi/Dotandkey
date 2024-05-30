@@ -110,7 +110,7 @@ const Cart = ({ item }) => {
             : 
             <div className="empty-cart">
               <img src={CartImg} alt="empty-cart" />
-              <p>Your cart is empty!</p>
+              <p>Your cart is empty</p>
             </div>
             }
         </ul>
