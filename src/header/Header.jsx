@@ -18,6 +18,8 @@ import Search from "./search/Search";
 import { Modal } from "bootstrap";
 import SearchBox from "./search/SearchBox";
 import Cart from "./Cart";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 function Header(props) {
   const [showPopup, setShowPopup] = useState(false);

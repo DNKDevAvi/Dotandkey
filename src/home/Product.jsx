@@ -10,6 +10,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from "../store/cartSlice";
 import Cart from "../header/Cart";
 import { toggleCartDrawer } from "../store/cartSlice";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 function Product() {
   const [data, setData] = useState(null);
@@ -188,14 +190,14 @@ function Product() {
                                   {label.products.map((item) => (
                                     <div className="each-pro">
                                       <div className="product-img-wrap">
-                                        <img src={item.image} alt="" />
-                                        <span>{item.tag}</span>
+                                        <img src={item.image || <Skeleton />} alt="" />
+                                        <span>{item.tag || <Skeleton />}</span>
                                       </div>
                                       <div className="pro-txt">
-                                        <p>{item.name}</p>
-                                        <span>{item.altText}</span>
+                                        <p>{item.name || <Skeleton />}</p>
+                                        <span>{item.altText || <Skeleton />}</span>
                                         <p className="price">
-                                          Rs. {item.price}
+                                          Rs. {item.price || <Skeleton />}
                                         </p>
                                       </div>
                                       <div className="variant"></div>
