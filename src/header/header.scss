@@ -1,0 +1,98 @@
+.headerperks{
+    background: #50504b;
+    color: #fff;
+    text-decoration: underline;
+    padding: 5px 0;
+    position: sticky;
+    top:0;
+    z-index: 999;
+    p{
+        margin: 0;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.each-perk{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #efefef;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    &:not(:last-child){
+        margin-bottom: 15px;
+
+    }
+    .perk-img-wrap{
+        height: 100px;
+        width: 100px;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .perk-txt{
+        width:80%;
+        padding: 0 10px;
+        span{
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-weight: 700;
+            padding: 5px;
+            border: 3px dashed #bbb;
+            border-radius: 5px;
+            background: #ddd;
+            cursor: pointer;
+            &.success{
+                background: green;
+                color: #fff;
+                border-color: #ffffff69;
+            }
+        }
+    }
+}
+
+
+.site-header{
+    padding: 10px 0;
+    position: sticky;
+    top: 31px;
+    z-index: 999;
+    background: #fffffff2;
+    border-bottom: 1px solid #ccccccc2;
+    backdrop-filter: blur(6px);
+    input[type="text"]{
+        width: 80%;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid #000;
+    }
+    button{
+        font-size: 30px;
+    }
+    border-bottom: 1px solid #ccc;
+    .each-nav{
+        font-size: 20px;
+    }
+    .head-right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .head-right-menu{
+            display: flex;
+            margin-bottom: 0;
+            li{
+                cursor: pointer;
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

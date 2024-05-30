@@ -1,0 +1,54 @@
+.top-menu{
+    padding: 20px 0 10px;
+    ul{
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin: 10px 0;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            height: 4px;
+          }
+          
+          /* Track */
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+          }
+           
+          /* Handle */
+          &::-webkit-scrollbar-thumb {
+            background: #888; 
+          }
+          
+          /* Handle on hover */
+          &::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+          }
+        li{
+            .each-top{
+                a{
+                    text-decoration: none;
+                    display: block;
+                    color: #000;
+                    font-size: 14px;
+                    line-height: 1;
+                    .img-wrap{
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                        
+                    }
+                   
+                    
+                }
+            }
+           
+        }
+    }
+}

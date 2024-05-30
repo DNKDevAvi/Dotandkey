@@ -1,0 +1,25 @@
+{
+    "banner":[
+        {
+            "id": 1,
+            "banImg": "https://www.dotandkey.com/cdn/shop/files/DESK_1708329013_1_89a36912-ea0a-4e5d-ab7a-1e14a3bef87f.jpg?v=1711437288",
+            "url": "www.dotandkey.com"
+        },
+        {
+            "id": 2,
+            "banImg": "https://www.dotandkey.com/cdn/shop/files/DESK_1708329013_copy.jpg?v=1713857617",
+            "url": "www.dotandkey.com"
+        },
+        {
+            "id": 3,
+            "banImg": "https://www.dotandkey.com/cdn/shop/files/vit_c_range_bbd238d9-2b7f-4644-8519-67f0b600070f.jpg?v=1714027018",
+            "url": "www.dotandkey.com"
+        },
+        {
+            "id": 4,
+            "banImg": "https://www.dotandkey.com/cdn/shop/files/DESK_1708329013_8c5225b5-53b6-4e24-9722-07e37c0c4c07.jpg?v=1711437343",
+            "url": "www.dotandkey.com"
+        }
+
+    ]
+}

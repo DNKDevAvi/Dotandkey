@@ -1,0 +1,36 @@
+{
+    "perks":[
+        {
+            "id":1,
+            "img": "https://www.dotandkey.com/cdn/shop/files/Artboard_17_d3b7797a-6a41-4e24-9fd8-7024f3d44b34.jpg?v=1711004937",
+            "text": "<b>FLAT 15% OFF</b> on all orders",
+            "code": "FLAT15"
+        },
+        {
+            "id":2,
+            "img": "https://www.dotandkey.com/cdn/shop/files/Artboard_17_d3b7797a-6a41-4e24-9fd8-7024f3d44b34.jpg?v=1711004937",
+            "text": "<b>FLAT 15% OFF</b> on all orders",
+            "code": "FLAT25"
+        },
+        {
+            "id":3,
+            "img": "https://www.dotandkey.com/cdn/shop/files/Artboard_17_d3b7797a-6a41-4e24-9fd8-7024f3d44b34.jpg?v=1711004937",
+            "text": "<b>FLAT 15% OFF</b> on all orders",
+            "code": ""
+        },
+        {
+            "id":4,
+            "img": "https://www.dotandkey.com/cdn/shop/files/Artboard_17_d3b7797a-6a41-4e24-9fd8-7024f3d44b34.jpg?v=1711004937",
+            "text": "<b>FLAT 15% OFF</b> on all orders",
+            "code": "FLAT15"
+        },
+        {
+            "id":5,
+            "img": "https://www.dotandkey.com/cdn/shop/files/Artboard_17_d3b7797a-6a41-4e24-9fd8-7024f3d44b34.jpg?v=1711004937",
+            "text": "<b>FLAT 15% OFF</b> on all orders",
+            "code": "FLAT15"
+        }
+       
+
+    ]
+}

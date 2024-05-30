@@ -1,0 +1,140 @@
+{
+    "menu":[
+        {
+            "id":1,
+            "nav":"TRACK YOUR ORDER",
+            "url":"https://www.dotandkey.com/apps/shipway_track",
+            "submenu": ""
+        },
+        {
+            "id":2,
+            "nav":"BEST SELLERS",
+            "url":"https://www.dotandkey.com/collections/best-sellers",
+            "submenu": ""
+        },
+        {
+            "id":3,
+            "nav":"WHAT'S NEW?",
+            "url":"https://www.dotandkey.com/collections/new-arrivals",
+            "submenu": ""
+        },
+        {
+            "id":4,
+            "nav":"COMBOS",
+            "url":"https://www.dotandkey.com/collections/combo-regimes",
+            "submenu": ""
+        },
+        {
+            "id":5,
+            "nav":"SHOP ALL PRODUCTS",
+            "url":"https://www.dotandkey.com/collections/combo-regimes",
+            "submenu": [
+                {
+                    "navname":"Sunscreens",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Moisturizers",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Face Serums",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Face Wash",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },{
+                    "navname":"Lip Care",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                }
+            ]
+        },
+        {
+            "id":6,
+            "nav":"SHOP BY CONCERN",
+            "url":"https://www.dotandkey.com/collections/combo-regimes",
+            "submenu": [
+                {
+                    "navname":"Dullness & Hyperpigmentation",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Acne & Dark Spots",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Dryness & Barrier Repair",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Early Signs Of Ageing",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },{
+                    "navname":"Oily & Uneven Skin Texture",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                }
+            ]
+        },
+        {
+            "id":7,
+            "nav":"SHOP BY INGREDIENTS",
+            "url":"https://www.dotandkey.com/collections/combo-regimes",
+            "submenu": [
+                {
+                    "navname":"Dullness & Hyperpigmentation",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Acne & Dark Spots",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Dryness & Barrier Repair",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Early Signs Of Ageing",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },{
+                    "navname":"Oily & Uneven Skin Texture",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                }
+            ]
+        },
+        {
+            "id":8,
+            "nav":"DOWNLOAD THE APP",
+            "url":"https://www.dotandkey.com/collections/combo-regimes",
+            "submenu": ""
+        },
+        {
+            "id":9,
+            "nav":"KNOW US BETTER",
+            "url":"https://www.dotandkey.com/collections/combo-regimes",
+            "submenu": [
+                {
+                    "navname":"Dullness & Hyperpigmentation",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Acne & Dark Spots",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Dryness & Barrier Repair",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },
+                {
+                    "navname":"Early Signs Of Ageing",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                },{
+                    "navname":"Oily & Uneven Skin Texture",
+                    "link":"https://www.dotandkey.com/collections/sunscreen"
+                }
+            ]
+        }
+       
+
+    ]
+}

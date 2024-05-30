@@ -1,0 +1,94 @@
+.megamenu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 91%;
+    transform: translateY(10px);
+    background: #fff;
+    z-index: 999;
+    height: 80vh;
+    .menu{
+        .megalist{
+            padding: 0;
+            height: 250px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            &::-webkit-scrollbar {
+                width: 4px;
+              }
+              
+              /* Track */
+              &::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+              }
+               
+              /* Handle */
+              &::-webkit-scrollbar-thumb {
+                background: #888; 
+              }
+              
+              /* Handle on hover */
+              &::-webkit-scrollbar-thumb:hover {
+                background: #555; 
+              }
+            li{
+                text-align: left;
+                ul{
+                    height: max-content;
+                    padding: 0;
+                }
+                button{
+                    width: 100%;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #000;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    // button{
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    // }
+}
+
+.accordion-item{
+    border: none !important;
+    .accordion-button.collapsed{
+        padding: 0 !important;
+        box-shadow:none !important;
+        &:focus{
+            outline: none !important;
+        }
+    }
+    .accordion-button:not(.collapsed){
+        border: none !important;
+        background: none !important;
+        box-shadow:none !important;
+        padding: 0 !important;
+        &:focus{
+            outline: none !important;
+        }
+    }
+}
+.megaImg{
+    height: 320px;
+    width: 75%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    transform: translateY(25%);
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,127 @@
+.cart-drawer {
+  .counter-head{
+    position: relative;
+    .count{
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      top: 0;
+      right: -10px;
+      background: red;
+      color: #fff;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+    }
+  }
+    .cart{
+      list-style: none;
+      padding: 0;
+      position: fixed;
+      right: -100%;
+      top: -30px;
+      overflow-y: auto;
+      height: 100vh;
+      width: 400px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 0px 5px 2px #0000001a;
+      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+      overflow: hidden;
+      z-index: 99;
+      li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        button{
+          font-size: 18px;
+        }
+        .cart-img-wrap{
+          border-radius: 5px;
+          overflow: hidden;
+          height: 100px;
+          width: 150px;
+          img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .item-dtls{
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 10px;
+          width: 100%;
+          h3{
+            font-size: 16px;
+            font-weight: 700;
+            width: 100%;
+          }
+          .counter{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            button{
+              background: #e9e9e9;
+              padding: 0px;
+              width: 40px;
+              border-radius: 5px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 18px;
+            }
+          }
+        }
+        
+        button {
+          margin: 5px;
+        }
+      }
+      &.slide{
+        right:0;
+        cursor:default;
+        transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+    }
+    .cart-head{
+      font-size: 14px;
+      font-weight: 500;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+  }
+  
+ 
+ .backdrop{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #000000a8;
+  display: none;
+  left: 0;
+  top: -30px;
+  z-index: 9;
+  &.active{
+    display: block;
+  }
+ }
+ .empty-cart{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #ccc;
+    img{
+      width: 300px;
+      opacity: 0.6;
+    }
+    p{
+      border-top: 1px solid #ccc;
+      padding-top: 5px;
+    }
+}
