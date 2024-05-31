@@ -190,14 +190,14 @@ function Product() {
                                   {label.products.map((item) => (
                                     <div className="each-pro">
                                       <div className="product-img-wrap">
-                                        <img src={item.image || <Skeleton />} alt="" />
-                                        <span>{item.tag || <Skeleton />}</span>
+                                        <img src={item.image} alt="" />
+                                        <span>{item.tag}</span>
                                       </div>
                                       <div className="pro-txt">
-                                        <p>{item.name || <Skeleton />}</p>
-                                        <span>{item.altText || <Skeleton />}</span>
+                                        <p>{item.name}</p>
+                                        <span>{item.altText}</span>
                                         <p className="price">
-                                          Rs. {item.price || <Skeleton />}
+                                          Rs. {item.price}
                                         </p>
                                       </div>
                                       <div className="variant"></div>
