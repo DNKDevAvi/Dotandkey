@@ -20,6 +20,7 @@ import SearchBox from "./search/SearchBox";
 import Cart from "./Cart";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import { NavLink } from "react-router-dom";
 
 function Header(props) {
   const [showPopup, setShowPopup] = useState(false);
@@ -70,7 +71,7 @@ function Header(props) {
               {showPopup && <MegaMenu />}
             </Col>
             <Col md={4} className="text-center">
-              <img src={Logo} alt="" />
+              <NavLink to="/"><img src={Logo} alt="" /></NavLink>
             </Col>
             <Col
               md={4}

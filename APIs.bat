@@ -24,6 +24,9 @@ start json-server --watch api/topnav.json --port 8600
 REM Start JSON Server with banner.json on port 8500
 start json-server --watch api/hometabs.json --port 8700
 
+REM Start JSON Server with banner.json on port 8500
+start json-server --watch api/shop-all.json --port 8800
+
 REM Wait for JSON Servers to start
 timeout /t 2
 
@@ -36,3 +39,4 @@ curl http://localhost:8400/api/search
 curl http://localhost:8500/api/banner
 curl http://localhost:8600/api/topnav
 curl http://localhost:8700/api/tabs
+curl http://localhost:8800/api/shop-all

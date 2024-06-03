@@ -3,37 +3,37 @@
         {
             "id": 1,
             "menuimg": "https://www.dotandkey.com/cdn/shop/files/image_724.png?v=1713859121&width=352",
-            "url": "https://www.dotandkey.com/collections/shop-all",
+            "url": "/collections/shop-all",
             "menutxt": "Shop All"
         },
         {
             "id": 2,
             "menuimg": "https://www.dotandkey.com/cdn/shop/files/image_726.png?v=1713859167&width=448",
-            "url": "https://www.dotandkey.com/collections/sunscreen",
+            "url": "/collections/sunscreen",
             "menutxt": "Sunscreen"
         },
         {
             "id": 3,
             "menuimg": "https://www.dotandkey.com/cdn/shop/files/image_725.png?v=1713859167&width=448",
-            "url": "https://www.dotandkey.com/products/vitamin-c-e-super-bright-moisturizer",
+            "url": "/collections/moisturizer",
             "menutxt": "Moisturizer"
         },
         {
             "id": 4,
             "menuimg": "https://www.dotandkey.com/cdn/shop/files/image_727.png?v=1713859233&width=448",
-            "url": "https://www.dotandkey.com/collections/serums-oils",
+            "url": "/collections/serums-oils",
             "menutxt": "Serum"
         },
         {
             "id": 5,
             "menuimg": "https://www.dotandkey.com/cdn/shop/files/image_817_1.png?v=1713860385&width=440",
-            "url": "https://www.dotandkey.com/collections/face-wash",
+            "url": "/collections/face-wash",
             "menutxt": "Face Wash"
         },
         {
             "id": 6,
             "menuimg": "https://www.dotandkey.com/cdn/shop/files/image_723.png?v=1713860398&width=448",
-            "url": "https://www.dotandkey.com/collections/lip-balms",
+            "url": "/collections/lip-balms",
             "menutxt": "Lip"
         }
        

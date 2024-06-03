@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./topnav.scss";
-import { Container } from "react-bootstrap";
+import { Container, Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function TopNav() {
   const [data, setData] = useState(null);
@@ -26,12 +27,12 @@ function TopNav() {
             {data.map((item, index) => (
               <li>
                 <div className="each-top">
-                  <a href={item.url}>
+                  <NavLink to={item.url}>
                     <div className="img-wrap">
                       <img src={item.menuimg} alt="" />
                     </div>
                     <p>{item.menutxt}</p>
-                  </a>
+                  </NavLink>
                 </div>
               </li>
             ))}
