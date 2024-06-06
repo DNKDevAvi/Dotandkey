@@ -62,88 +62,91 @@ const Cart = ({ item }) => {
           <FontAwesomeIcon icon={faBagShopping} onClick={handleOpenCart} />
           <span className="count">{cartCount}</span>
         </div>
-
-        <ul className={isOpen ? "cart slide" : "cart"}>
-          <div className="cart-head d-flex justify-content-between p-2">
-            <div className="cart-counter">
-              Your Bag:<span>{cartCount}</span>
-            </div>
-            <div className="cart-message"></div>
-            <FontAwesomeIcon icon={faTimes} onClick={handleCloseCart} />
-          </div>
-
-          {cartCount !== 0 ? (
-            <>
-              {cart.map((item) => (
-                <li key={item.id}>
-                  <div className="cart-img-wrap">
-                    <img src={item.image} alt={item.name} />
-                  </div>
-                  <div className="item-dtls">
-                    <h3>{item.name}</h3>                                     
-                    <div className="dtl-wrap">
-                      <div className="counter">
-                        <button onClick={() => handleDecreaseQuantity(item.id)}>
-                          -
-                        </button>
-                        <span>{item.quantity}</span>
-                        {item.quantity !== 10 ? (
-                          <button onClick={() => handleIncreaseQuantity(item.id)}>
-                            +
-                          </button>
-                        ) : (
-                          <button
-                            onClick={() => handleIncreaseQuantity(item.id)}
-                            disabled
-                          >
-                            +
-                          </button>
-                        )}
-                      </div>
-                      <span><FontAwesomeIcon icon={faIndianRupee}/>{item.price}</span>
-                    </div>
-
-                  </div>
-                  <button
-                    onClick={() => {
-                      handleRemoveFromCart(item.id);
-                      handleRemoveItem(item);
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faTrash} />
-                  </button>
-                </li>
-              ))}
-              <div className="summery">
-                <h5>Order summary</h5>
-                <ul>
-                  <li>
-                    <div className="each-sum">
-                      Total MRP:<span className="sum-dtls"></span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="each-sum">
-                      Discount:<span className="sum-dtls"></span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="each-sum">
-                      Shipping Fee:<span className="sum-dtls"></span>
-                    </div>
-                  </li>
-                </ul>
-                <button className="checkout">Checkout</button>
+        <div className={isOpen ? "cart slide" : "cart"}>
+          <ul className="item-list">
+            <div className="cart-head d-flex justify-content-between p-2">
+              <div className="cart-counter">
+                Your Bag:<span>{cartCount}</span>
               </div>
-            </>
-          ) : (
-            <div className="empty-cart">
-              <img src={CartImg} alt="empty-cart" />
-              <p>Your cart is empty!</p>
-              <button>Shop Now</button>
+              <div className="cart-message"></div>
+              <FontAwesomeIcon icon={faTimes} onClick={handleCloseCart} />
             </div>
-          )}
-        </ul>
+
+            {cartCount !== 0 ? (
+              <>
+                {cart.map((item) => (
+                  <li key={item.id}>
+                    <div className="cart-img-wrap">
+                      <img src={item.image} alt={item.name} />
+                    </div>
+                    <div className="item-dtls">
+                      <h3>{item.name}</h3>
+                      <div className="dtl-wrap">
+                        <div className="counter">
+                          <button onClick={() => handleDecreaseQuantity(item.id)}>
+                            -
+                          </button>
+                          <span>{item.quantity}</span>
+                          {item.quantity !== 10 ? (
+                            <button onClick={() => handleIncreaseQuantity(item.id)}>
+                              +
+                            </button>
+                          ) : (
+                            <button
+                              onClick={() => handleIncreaseQuantity(item.id)}
+                              disabled
+                            >
+                              +
+                            </button>
+                          )}
+                        </div>
+                        <span><FontAwesomeIcon icon={faIndianRupee} />{item.price}</span>
+                      </div>
+
+                    </div>
+                    <button
+                      onClick={() => {
+                        handleRemoveFromCart(item.id);
+                        handleRemoveItem(item);
+                      }}
+                    >
+                      <FontAwesomeIcon icon={faTrash} />
+                    </button>
+                  </li>
+                ))}
+
+              </>
+            ) : (
+              <div className="empty-cart">
+                <img src={CartImg} alt="empty-cart" />
+                <p>Your cart is empty!</p>
+                <button>Shop Now</button>
+              </div>
+            )}
+          </ul>
+          <div className="summery">
+            <h5>Order summary</h5>
+            <ul>
+              <li>
+                <div className="each-sum">
+                  Total MRP:<span className="sum-dtls"></span>
+                </div>
+              </li>
+              <li>
+                <div className="each-sum">
+                  Discount:<span className="sum-dtls"></span>
+                </div>
+              </li>
+              <li>
+                <div className="each-sum">
+                  Shipping Fee:<span className="sum-dtls"></span>
+                </div>
+              </li>
+            </ul>
+            <button className="checkout">Checkout</button>
+          </div>
+        </div>
+
       </div>
       <div
         className={isOpen ? "backdrop active" : "backdrop"}

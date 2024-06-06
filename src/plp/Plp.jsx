@@ -18,8 +18,9 @@ function Plp() {
   const [isScrolled, setIsScrolled] = useState(false);
   const scrollThreshold = 620; // Adjust the scroll threshold value as needed
   const dispatch = useDispatch();
+  const apis = ["shop-all","sunscreen","http://localhost:8820/moisturizer","http://localhost:8830/serums-oils","http://localhost:8840/face-wash"]
 
-
+  // console.log({name})
 
   useEffect(() => {
     const fetchData = async () => {
