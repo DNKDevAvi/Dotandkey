@@ -12,6 +12,7 @@ import Cart from "../header/Cart";
 import { toggleCartDrawer } from "../store/cartSlice";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import Filter from "./Filter";
 
 function Product() {
   const [data, setData] = useState(null);
@@ -97,30 +98,7 @@ function Product() {
         </div>
         <Row className="mt-5">
           <Col md={3}>
-            <div className={`filter ${isScrolled ? 'sticky' : ''}`} ref={scrollElement}>
-              <div className="fil-head d-flex justify-content-between align-items-center">
-                <h4>Filter</h4>
-                <FontAwesomeIcon icon={faFilter} />
-              </div>
-
-
-              {data?.filter(select => select.heading === "Bestsellers" || select.heading === "Skin Concerns").map((item) => (
-
-                <>
-                  <h6>{item.heading}</h6>
-                  <ul>
-                    {item.label.map((filter) => (
-                      <>
-                        <li>
-                          <a href={`${filter.url}`}>{filter.name}</a>
-                        </li>
-                      </>
-                    ))}
-                  </ul>
-                </>
-              ))}
-
-            </div>
+           <Filter />
 
           </Col>
           <Col md={9}>

@@ -114,7 +114,27 @@ const Cart = ({ item }) => {
                     </button>
                   </li>
                 ))}
-
+                <div className="summery">
+                  <h5>Order summary</h5>
+                  <ul>
+                    <li>
+                      <div className="each-sum">
+                        Total MRP:<span className="sum-dtls"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="each-sum">
+                        Discount:<span className="sum-dtls"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="each-sum">
+                        Shipping Fee:<span className="sum-dtls"></span>
+                      </div>
+                    </li>
+                  </ul>
+                  <button className="checkout">Checkout</button>
+                </div>
               </>
             ) : (
               <div className="empty-cart">
@@ -124,27 +144,7 @@ const Cart = ({ item }) => {
               </div>
             )}
           </ul>
-          <div className="summery">
-            <h5>Order summary</h5>
-            <ul>
-              <li>
-                <div className="each-sum">
-                  Total MRP:<span className="sum-dtls"></span>
-                </div>
-              </li>
-              <li>
-                <div className="each-sum">
-                  Discount:<span className="sum-dtls"></span>
-                </div>
-              </li>
-              <li>
-                <div className="each-sum">
-                  Shipping Fee:<span className="sum-dtls"></span>
-                </div>
-              </li>
-            </ul>
-            <button className="checkout">Checkout</button>
-          </div>
+
         </div>
 
       </div>
