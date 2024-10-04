@@ -9,6 +9,7 @@ import { addToCart, removeFromCart } from "../store/cartSlice";
 import { toggleCartDrawer } from "../store/cartSlice";
 import PlpBannerImg from "../images/demo.webp"
 import Filter from "../home/Filter";
+import TopNav from "../banner/TopNav";
 
 function Plp() {
   const params = useParams();
@@ -70,6 +71,7 @@ function Plp() {
         }
 
       </div>
+      
       <Container className="text-center">
         <Row className="mt-5">
           <Col md={12}><h2 className="mb-4" style={{ textTransform: 'capitalize' }}>{name}</h2></Col>

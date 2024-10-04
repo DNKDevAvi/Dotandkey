@@ -10,8 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBagShopping,
   faIndianRupee,
-  faRupee,
-  faRupeeSign,
   faTimes,
   faTrash,
 } from "@fortawesome/free-solid-svg-icons";
@@ -20,27 +18,23 @@ import {
   openCartDrawer,
   removeItem,
 } from "../store/cartSlice";
-
 import CartImg from "../images/bag.png";
 
 const Cart = ({ item }) => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.cart);
   let cartCount = useSelector((state) => state.cart.count);
+  
   const handleRemoveFromCart = (id) => {
     dispatch(removeFromCart(id));
   };
-
   const handleIncreaseQuantity = (id) => {
     dispatch(increaseQuantity(id));
   };
-
   const handleDecreaseQuantity = (id) => {
     dispatch(decreaseQuantity(id));
   };
-
   const isOpen = useSelector((state) => state.cart.isOpen);
-
   const handleCloseCart = () => {
     dispatch(closeCartDrawer());
   };
@@ -54,6 +48,13 @@ const Cart = ({ item }) => {
       console.error("Item quantity is missing or undefined.");
     }
   };
+
+  // Function to calculate total MRP
+  const calculateTotalMRP = () => {
+    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  };
+
+  const totalMRP = calculateTotalMRP();
 
   return (
     <>
@@ -71,7 +72,6 @@ const Cart = ({ item }) => {
               <div className="cart-message"></div>
               <FontAwesomeIcon icon={faTimes} onClick={handleCloseCart} />
             </div>
-
             {cartCount !== 0 ? (
               <>
                 {cart.map((item) => (
@@ -100,9 +100,8 @@ const Cart = ({ item }) => {
                             </button>
                           )}
                         </div>
-                        <span><FontAwesomeIcon icon={faIndianRupee} />{item.price}</span>
+                        <span><FontAwesomeIcon icon={faIndianRupee} />{item.quantity * item.price}</span>
                       </div>
-
                     </div>
                     <button
                       onClick={() => {
@@ -119,7 +118,7 @@ const Cart = ({ item }) => {
                   <ul>
                     <li>
                       <div className="each-sum">
-                        Total MRP:<span className="sum-dtls"></span>
+                        Total MRP: <span className="sum-dtls"><FontAwesomeIcon icon={faIndianRupee} />{totalMRP}</span>
                       </div>
                     </li>
                     <li>
@@ -144,9 +143,7 @@ const Cart = ({ item }) => {
               </div>
             )}
           </ul>
-
         </div>
-
       </div>
       <div
         className={isOpen ? "backdrop active" : "backdrop"}
