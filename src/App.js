@@ -7,16 +7,19 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Error from './error/Error';
 import Home from './home/Home';
 import Plp from './plp/Plp';
+import Test from './Test';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Header />
-        <Routes>
+      <Test />
+
+        {/* <Routes>
           <Route path = '/*' element={<Error />} />
           <Route path = '/' element={<Home />} />
           <Route path = '/collections/:name' element={<Plp />} />
-        </Routes>
+        </Routes> */}
       </BrowserRouter>
     
     </div>
