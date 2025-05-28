@@ -1,9 +1,9 @@
 export async function shopifyQuery(query, variables = {}) {
-    const response = await fetch('https://dot-key.myshopify.com/api/2024-01/graphql.json', {
+    const response = await fetch('', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Shopify-Storefront-Access-Token': "05e208a290f74b4b2059923933e124f1",
+        'X-Shopify-Storefront-Access-Token': "",
       },
       body: JSON.stringify({ query, variables }),
     });
